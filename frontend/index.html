@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HODLINFO</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">HODLINFO</div>
+            <div class="header-right">
+                <select id="currencySelect">
+                    <option value="INR">INR</option>
+                </select>
+                <select id="cryptoSelect">
+                    <option value="BTC">BTC</option>
+                    <option value="ETH">ETH</option>
+                    <option value="USDT">USDT</option>
+                </select>
+                <button id="telegramButton">Connect Telegram</button>
+                <div class="timer" id="timer">60</div>
+            </div>
+        </header>
+        <div class="best-price">
+            <div>Best Price to Trade</div>
+            <div id="averagePrice" class="average-price">₹ 0</div>
+            <div class="price-info">
+                <div>Buy Price <span id="buyPrice">₹ 0</span></div>
+                <div>Sell Price <span id="sellPrice">₹ 0</span></div>
+            </div>
+        </div>
+        <table id="tickerTable">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Platform</th>
+                    <th>Last Traded Price</th>
+                    <th>Buy / Sell Price</th>
+                    <th>Difference</th>
+                    <th>Savings</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <footer>
+            <div class="footer-text">Copyright © 2024 HodlInfo.com</div>
+            <div class="footer-text">Developed By <a href="https://www.quadbtech.com" target="_blank">QuadBTech</a></div>
+        </footer>
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
